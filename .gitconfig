@@ -1,3 +1,9 @@
 [user]
 	email = erik.wilthil@gmail.com
 	name = "Erik Wilthil"
+
+[diff]
+	color = auto
+
+[status]
+	color = auto

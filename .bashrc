@@ -15,6 +15,3 @@ fi
 
 #custom prompt
 export PS1="[\u@\W]\$ "
-if [ -f~/.bashfunctions.sh ]; then
-	. ~/.bashfunctions.sh
-fi
