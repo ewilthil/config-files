@@ -74,8 +74,8 @@ set noexpandtab
 set tabstop=4
 set shiftwidth=4
 " keep folds between closing and opening a file
-au BufWinLeave * mkview
-au BufWinEnter * silent loadview
+"au BufWinLeave * mkview
+""au BufWinEnter * silent loadview
 
 "associate *.go with go syntax
 au BufRead,BufNewFile *.go setfiletype go
