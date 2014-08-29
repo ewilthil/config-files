@@ -4,7 +4,6 @@ endif
 
 set encoding=utf-8
 
-
 set nocompatible	" Use Vim defaults (much better!)
 set bs=indent,eol,start		" allow backspacing over everything in insert mode
 "set ai			" always set autoindenting on
@@ -13,6 +12,17 @@ set viminfo='20,\"50	" read/write a .viminfo file, don't store more
 			" than 50 lines of registers
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
+
+
+"Vundle stuff
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
+call vundle#end()
+filetype plugin indent on
 
 " Only do this part when compiled with support for autocommands
 if has("autocmd")
@@ -82,6 +92,7 @@ au BufRead,BufNewFile *.go setfiletype go
 
 autocmd! BufNewFile,BufRead *.ino setlocal ft=arduino
 
+colorscheme jellybeans
 let g:tex_flavor = "latex"
 
 "set spell check
