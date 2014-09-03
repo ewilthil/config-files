@@ -1,0 +1,7 @@
+#global ignores. Mainly temporary files from editors
+
+#vim
+*.swp
+
+#Matlab
+*.asv
