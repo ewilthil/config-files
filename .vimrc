@@ -94,7 +94,8 @@ autocmd! BufNewFile,BufRead *.ino setlocal ft=arduino
 
 colorscheme jellybeans
 let g:tex_flavor = "latex"
-
+"Mapping
+map <F5> :w \| :make<CR>
 "set spell check
 "set spell
 hi SpellBad ctermbg=red
