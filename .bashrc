@@ -13,5 +13,10 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
+# Custom functions
+if [ -f ~/.bashfunctions.sh]; then
+	. ~/.bashfunctions.sh
+fi
+
 #custom prompt
 export PS1="[\u@\W]\$ "
