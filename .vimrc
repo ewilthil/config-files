@@ -14,16 +14,6 @@ set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 
 
-"Vundle stuff
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'gmarik/Vundle.vim'
-
-call vundle#end()
-filetype plugin indent on
-
 " Only do this part when compiled with support for autocommands
 if has("autocmd")
   augroup fedora
