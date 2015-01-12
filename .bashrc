@@ -14,7 +14,7 @@ if [ -f ~/.aliases ]; then
 fi
 
 # Custom functions
-if [ -f ~/.bashfunctions.sh]; then
+if [ -f ~/.bashfunctions.sh ]; then
 	. ~/.bashfunctions.sh
 fi
 
