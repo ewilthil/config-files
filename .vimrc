@@ -83,6 +83,7 @@ au BufRead,BufNewFile *.go setfiletype go
 autocmd! BufNewFile,BufRead *.ino setlocal ft=arduino
 
 colorscheme jellybeans
+highlight LineNr ctermfg=grey
 let g:tex_flavor = "latex"
 "Mapping
 map <F5> :w \| :make<CR>
