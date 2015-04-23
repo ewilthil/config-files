@@ -80,6 +80,9 @@ set shiftwidth=4
 "associate *.go with go syntax
 au BufRead,BufNewFile *.go setfiletype go
 
+"*.gpg is also gnuplot (configs / setting)
+au BufRead,BufNewFile *.gpg setfiletype gnuplot
+
 autocmd! BufNewFile,BufRead *.ino setlocal ft=arduino
 
 colorscheme jellybeans
