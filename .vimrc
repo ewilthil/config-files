@@ -97,3 +97,23 @@ color jellybeans
 set number
 set shiftwidth=4
 set tabstop=4
+" keep folds between closing and opening a file
+"au BufWinLeave * mkview
+""au BufWinEnter * silent loadview
+
+"associate *.go with go syntax
+"au BufRead,BufNewFile *.go setfiletype go
+"
+""*.gpg is also gnuplot (configs / setting)
+"au BufRead,BufNewFile *.gpg setfiletype gnuplot
+"
+"autocmd! BufNewFile,BufRead *.ino setlocal ft=arduino
+"
+colorscheme jellybeans
+"highlight LineNr ctermfg=grey
+"let g:tex_flavor = "latex"
+""Mapping
+"map <F5> :w \| :make<CR>
+""set spell check
+""set spell
+"hi SpellBad ctermbg=red

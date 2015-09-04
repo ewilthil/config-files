@@ -33,18 +33,20 @@ function pstoolFig(){
 }
 
 function gnuFig(){
-	rm -rf $1.pdf;
-	gnuplot $1.gpi;
+	fname=$(basename "$1")
+	fname="${fname%.*}"
+	echo $fname
+	rm -rf $fname".pdf";
+	gnuplot $fname".gpi";
 	touch tempMkFig.tex;
 	echo "\documentclass{article}" >> tempMkFig.tex;
 	echo "\usepackage{graphics}" >> tempMkFig.tex
 	echo "\renewcommand*{\familydefault}{\sfdefault}" >> tempMkFig.tex
 	echo "\pagestyle{empty}" >> tempMkFig.tex;
 	echo "\begin{document}" >> tempMkFig.tex;
-	echo "\input{$1}" >> tempMkFig.tex;
+	echo "\input{$fname}" >> tempMkFig.tex;
 	echo "\end{document}" >> tempMkFig.tex;
 	pdflatex -shell-escape tempMkFig.tex;
-	pdfcrop -pdftexcmd pdflatex tempMkFig.pdf $1.pdf
-	rm -rf tempMk* $1.tex $1.eps $1-eps-converted-to.pdf;
+	pdfcrop -pdftexcmd pdflatex tempMkFig.pdf $fname".pdf"
+	rm -rf tempMk* $fname".tex" $fname".eps" $fname"-eps-converted-to.pdf";
 }
-
