@@ -21,6 +21,4 @@ fi
 #custom prompt
 export PS1="[\u@\W]\$ "
 
-#texlive
-export PATH=/usr/local/texlive/2014/bin/x86_64-linux:$PATH
 
