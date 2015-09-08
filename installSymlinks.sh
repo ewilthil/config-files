@@ -2,7 +2,7 @@
 
 dir=~/config-files
 olddir=~/.conf_old
-files=".vimrc .gitconfig .aliases .bashrc .bashfunctions.sh"
+files=".vimrc .gitconfig .aliases .bashrc .bashfunctions.sh .bash_profile"
 
 
 echo -n "Creating $olddir for backup of any existing dotfiles in ~ ..."
