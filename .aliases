@@ -1,5 +1,3 @@
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
 alias sd='shutdown now'
 alias ..='cd ..'
 alias rm='rm -i'
