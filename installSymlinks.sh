@@ -1,8 +1,8 @@
 #!/bin/bash
 
-dir=~/config-files
+dir=~/Documents/config-files
 olddir=~/conf_old
-files=".vimrc .gitconfig .aliases .bashrc .bashfunctions.sh"
+files=".vimrc .gitconfig .aliases .bashrc .bashfunctions.sh .gitignore"
 
 
 echo -n "Creating $olddir for backup of any existing dotfiles in ~ ..."
@@ -14,6 +14,7 @@ cd $dir
 echo "Done"
 
 for file in $files; do
-	mv ~/$file ~/olddir/
+	mv ~/$file $olddir/
 	ln -s $dir/$file ~/$file
+	echo "$file linked"
 done
