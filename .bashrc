@@ -15,8 +15,7 @@ fi
 
 # Custom functions
 if [ -f ~/.bashfunctions.sh ]; then
-	. ~/.bashfunctions.sh
+    . ~/.bashfunctions.sh
 fi
-
 source /opt/ros/indigo/setup.bash
 
