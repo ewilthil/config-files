@@ -7,3 +7,4 @@ alias countgo='find . -name "*.go" -exec wc -l {} \; | cut -d " " -f 1 | paste -
 alias ipetopdf='ipetoipe -pdf'
 alias please='sudo'
 alias mountVBX='sudo mount -t vboxsf -o uid=0,gid=981,umask=007,fmode=660 vbCommon ~/Documents/shared'
+alias edit='open -a macvim'
