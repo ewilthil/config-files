@@ -7,12 +7,15 @@ Plug 'hukl/Smyck-Color-Scheme'
 Plug 'morhetz/gruvbox'
 Plug 'altercation/vim-colors-solarized'
 call plug#end()
+
 " Colors and layout
 color gruvbox
 set background=light
 set number
+set expandtab
 set shiftwidth=4
-set tabstop=4
+set softtabstop=4
+
 " LatexBox Stuff
 let g:LatexBox_latexmk_options = "-pdflatex='pdflatex --shell-escape'"
 let g:LatexBox_viewer = "open -a Skim"
