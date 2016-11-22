@@ -6,6 +6,7 @@ Plug 'LaTeX-Box-Team/LaTeX-Box'
 Plug 'hukl/Smyck-Color-Scheme'
 Plug 'morhetz/gruvbox'
 Plug 'altercation/vim-colors-solarized'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 " Colors and layout

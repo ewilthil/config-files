@@ -10,3 +10,5 @@
 	color = auto
 [push]
 	default = simple
+[merge]
+        tool = gvimdiff
